@@ -6,7 +6,7 @@
             <class name="Tests.LambdaTest">
                 <methods>
                     <include name="ScreenshotTest"/>
-<!--                    <exclude name="SearchTest"/>-->
+<!--                    <exclude name="InvalidTest"/>-->
                 </methods>
             </class>
         </classes>
