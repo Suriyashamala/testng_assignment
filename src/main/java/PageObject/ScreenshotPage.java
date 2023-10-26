@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ScreenshotPage {
     static WebDriver ldriver;
-    private static final By PRODUCT = By.xpath("(//input[@placeholder='Search For Products'])[1]");
+    private static final By PRODUCT = By.xpath("//input[@placeholder='Search For Products'][1]");
     private static final By SUBMIT = By.xpath("//button[@type='submit']");
     private static final By CAMERA = By.xpath("//img[@title='Canon EOS 5D']");
 
