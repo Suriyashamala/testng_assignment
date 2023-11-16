@@ -10,6 +10,8 @@ public class SearchPage {
     private static final By FILTER = By.className("custom-select");
     private static final By FILTER_SEARCH = By.id("button-search");
     private static final By TABLETS = By.xpath("/html[1]/body[1]/div[1]/div[6]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/select[1]/option[14]");
+    private static final By IPHONE = By.xpath("(//img[@title='iPhone'])[1]");
+
 
     public SearchPage(WebDriver rdriver)
     {
@@ -28,9 +30,9 @@ public class SearchPage {
         ldriver.findElement(FILTER).sendKeys(tablets);
         ldriver.findElement(TABLETS).click();
     }
-    public static void clicksearch()
-    {
+    public static void clickSearch() {
         ldriver.findElement(FILTER_SEARCH).click();
+        ldriver.findElement(IPHONE).click();
     }
 
 }

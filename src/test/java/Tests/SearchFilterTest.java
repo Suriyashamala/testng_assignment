@@ -1,8 +1,10 @@
 package Tests;
 
 import PageObject.SearchPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import java.time.Duration;
 
@@ -18,7 +20,11 @@ public class SearchFilterTest {
         SearchPage.clickSubmit();
 
         SearchPage.clickFilter("tablets");
-        SearchPage.clicksearch();
+        SearchPage.clickSearch();
+//
+        Assert.assertEquals(driver.findElement(By.xpath("//h1[normalize-space()='iPhone']"))
+                .getText(),"tablets","no tablets");
+
 
 //        driver.quit();
     }

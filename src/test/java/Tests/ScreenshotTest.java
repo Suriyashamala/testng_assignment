@@ -3,10 +3,12 @@ package Tests;
 import PageObject.ScreenshotPage;
 import PageObject.SearchPage;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,6 +26,7 @@ public class ScreenshotTest {
         ScreenshotPage.clickSubmit();
         screenshotPage.clickCamera();
 
+//
         TakesScreenshot screenshot = (TakesScreenshot) driver;
         File screenshotFile = screenshot.getScreenshotAs(OutputType.FILE);
         File destinationFile = new File("Screenshot.png");
@@ -32,6 +35,12 @@ public class ScreenshotTest {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        Assert.assertEquals(driver.findElement(By.xpath("//h1[normalize-space()='Canon EOS 5D']"))
+                .getText(),"Canon EOS 5D","not found");
+
+//        Assert.assertNotEquals(driver.findElement(By.xpath("//h1[normalize-space()='Canon EOS 5D']"))
+//                .getText(),"Canon EOS 5D","not found");
 
 //        driver.quit();
     }

@@ -3,10 +3,12 @@ package Tests;
 import PageObject.InvalidPage;
 import PageObject.SearchPage;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,6 +34,18 @@ public class InvalidTest {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+//        Assert.assertTrue(driver.getCurrentUrl().contains("SSXYZ1102"), "Url missmatching!");
+//        Assert.assertFalse(driver.getCurrentUrl().contains("SSXYZ1102"), "Url missmatching!");
+
+        Assert.assertEquals(driver.findElement(By.xpath("//p[contains(text(),'There is no product that matches the search criter')]"))
+                        .getText(),"There is no product that matches the search criteria.",
+                "not matched");
+
+//        Assert.assertEquals(driver.findElement(By.xpath("//p[contains(text(),'There is no product that matches the search criter')]"))
+//                        .getText(),"There is no product that matches the search criteria",
+//                "not matched");
+//
+
 
         // driver.quit();
 
