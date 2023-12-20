@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccc98324-4021-433a-93e8-bb6894541dd3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/AmazonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/Myntraa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/InvalidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/InvalidTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,22 +66,9 @@
       <recent name="PageObject" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SearchFilterTest">
-    <configuration name="InvalidTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tests.InvalidTest" />
-      <module name="Testng_assignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScreenshotTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tests.ScreenshotTest" />
+  <component name="RunManager" selected="Application.Myntraa">
+    <configuration name="Myntraa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tests.Myntraa" />
       <module name="Testng_assignment" />
       <extension name="coverage">
         <pattern>
@@ -105,8 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tests.SearchTest" />
+    <configuration name="AmazonTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Testng_assignment" />
       <extension name="coverage">
         <pattern>
@@ -114,14 +101,45 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AmazonTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/Dell/IdeaProjects/Testng_assignment/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AmazonTest.amazon (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Testng_assignment" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AmazonTest" />
+      <option name="METHOD_NAME" value="amazon" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AmazonTest.amazon" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Testng_assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AmazonTest" />
+      <option name="METHOD_NAME" value="amazon" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -130,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Myntraa" />
+        <item itemvalue="TestNG.AmazonTest.amazon" />
+        <item itemvalue="TestNG.AmazonTest" />
+        <item itemvalue="TestNG.AmazonTest.amazon (1)" />
         <item itemvalue="Application.SearchFilterTest" />
-        <item itemvalue="Application.SearchTest" />
-        <item itemvalue="Application.InvalidTest" />
-        <item itemvalue="Application.ScreenshotTest" />
-        <item itemvalue="TestNG.C:/Users/Dell/IdeaProjects/Testng_assignment/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700464557683</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit and push">
+      <created>1701238914140</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701238914140</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,5 +223,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
